@@ -1,0 +1,4 @@
+# python virtual environment
+**/venv
+# pycharm .idea files
+*.idea
