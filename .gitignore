@@ -1,4 +1,11 @@
 # python virtual environment
 **/venv
+
 # pycharm .idea files
 *.idea
+
+# sqlite database file
+*.db
+
+# vim swap files
+*.swp
