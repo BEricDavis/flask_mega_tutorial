@@ -56,6 +56,7 @@ def register():
         return redirect(url_for('index'))
     form = RegistrationForm()
     if form.validate_on_submit():
+        # noinspection PyArgumentList
         user = User(username=form.username.data, email=form.email.data)
         user.set_password(form.password.data)
         db.session.add(user)
@@ -63,3 +64,13 @@ def register():
         flash('Registration successful')
         return redirect(url_for('login'))
     return render_template('register.html', title='Register', form=form)
+
+@app.route('user/<username>')
+@login_required
+def user(username):
+    user = User.query.filter_by(username=username).first_or_404()
+    posts = [
+        {'author': user, 'body': 'Test post 1'},
+        {'author': user, 'body': 'Test post 2'}
+    ]
+    return render_template('user.html', user=user, posts=posts)
