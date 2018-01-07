@@ -54,7 +54,7 @@ class User(UserMixin, db.Model):
             self.followed.remove(user)
 
     def is_following(self, user):
-        return self.followed.filter(followers.c.followed_id == user.id.count() > 0)
+        return self.followed.filter(followers.c.followed_id == user.id).count() > 0
 
 class Post(db.Model):
     id = db.Column(db.Integer, primary_key=True)
