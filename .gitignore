@@ -9,3 +9,7 @@
 
 # vim swap files
 *.swp
+
+# logs directory
+**/logs
+*.log
