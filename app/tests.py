@@ -5,7 +5,7 @@ from datetime import datetime, timedelta
 
 class UserModelCase(unittest.TestCase):
     def setUp(self):
-        app.config['SQLALCHEMY_DATABASE_URL'] = 'sqlite://'
+        app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite://'
         db.create_all()
 
     def tearDown(self):
