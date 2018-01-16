@@ -6,6 +6,7 @@
 
 # sqlite database file
 *.db
+*.db.old
 
 # vim swap files
 *.swp
