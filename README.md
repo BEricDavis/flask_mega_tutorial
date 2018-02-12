@@ -16,3 +16,9 @@ import User from app.models: Source code string cannot contain null bytes.
 * renamed app.db to app.db.old
 * migrations ran successfully
 * test suite is tearing everything down!?
+* I had misconfigured the sqloite connect string
+
+3: To stand up a fake mailserver:
+* python -m smtpd -n -c DebuggingServer localhost:25
+* set MAIL_SERVER=localhost
+* set MAIL_PORT=25
