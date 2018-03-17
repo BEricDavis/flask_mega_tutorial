@@ -17,3 +17,5 @@ class Config(object):
     ADMINS = ['feralmonkey@gmail.com']
     # Pagination settings
     POSTS_PER_PAGE = 3
+    # Languages to handle in flask-babel
+    LANGUAGES = ['en', 'es']
