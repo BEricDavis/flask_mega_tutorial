@@ -14,3 +14,6 @@
 # logs directory
 **/logs
 *.log
+
+# pycache
+__pycache__
