@@ -4,6 +4,7 @@ https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world
 Before launching, remember to run: 
 * venv\Scripts\activate
 * set FLASK_APP=microblog.py
+* set MS_TRANSLATOR_KEY=<key>
 
 #Notes
 1: install of alembic seemed to be incorrect.  Received errors when trying to 

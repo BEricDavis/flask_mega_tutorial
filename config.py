@@ -19,3 +19,5 @@ class Config(object):
     POSTS_PER_PAGE = 3
     # Languages to handle in flask-babel
     LANGUAGES = ['en', 'es']
+    # Azure text translate key
+    MS_TRANSLATOR_KEY = os.environ.get('MS_TRANSLATOR_KEY')
